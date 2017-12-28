@@ -1,0 +1,28 @@
+# Первая задачка такая.
+# Входные данные: массив чисел.
+# Результат: массив, состящий из элементов,
+# каждый из которых на единицу больше элемента из входного массива.
+#
+
+arr = [0,1,2,3,4]
+
+def PlusOne(arr_in)
+  arr_new = []
+  for value in arr_in
+    value = value + 1
+    arr_new << value
+  end
+  return arr_new
+end
+
+# Локоничная, версия_2
+def PlusOnev2(arr_in)
+  arr_in = arr_in.collect { |x| x + 1 }
+  return arr_in
+end
+
+a = PlusOne (arr)
+b = PlusOnev2 (arr)
+
+puts a.to_s
+puts b.to_s
