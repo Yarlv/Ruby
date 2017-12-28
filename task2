@@ -1,0 +1,17 @@
+# Второе задание.
+# Входные данные: массив пар ( [ [a1, b1], [a2, b2], ... ]).
+# Результат: массив пар, где в каждой паре элементы поменяли местами.
+#
+
+arr = [[1,2],[3,4],['a','b']]
+
+def ArrRev (arr_in)
+    arr_new = []
+    arr_in = arr_in.collect { |x| x.reverse}
+    arr_new << arr_in
+    return arr_in
+end
+
+a = ArrRev(arr)
+
+puts a.to_s
