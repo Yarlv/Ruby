@@ -9,7 +9,7 @@ def ArrRev (arr_in)
     arr_new = []
     arr_in = arr_in.collect { |x| x.reverse}
     arr_new << arr_in
-    return arr_in
+    return arr_new
 end
 
 a = ArrRev(arr)
